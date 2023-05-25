@@ -1,0 +1,26 @@
+{
+  "name": "Aspects",
+  "version": "1.4.1",
+  "summary": "Delightful, simple library for aspect oriented programming.",
+  "homepage": "https://github.com/steipete/Aspects",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Peter Steinberger": "steipete@gmail.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/Aspects/1.4.1/zip",
+    "type": "zip"
+  },
+  "source_files": "bin_Aspects_1.4.1/Headers/*",
+  "requires_arc": true,
+  "social_media_url": "https://twitter.com/steipete",
+  "public_header_files": "bin_Aspects_1.4.1/Headers/*.h",
+  "vendored_libraries": "bin_Aspects_1.4.1/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」"
+}
