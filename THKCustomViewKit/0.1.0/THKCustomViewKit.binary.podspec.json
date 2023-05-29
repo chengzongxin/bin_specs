@@ -1,0 +1,504 @@
+{
+  "name": "THKCustomViewKit",
+  "version": "0.1.0",
+  "summary": "公共view",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKCustomViewKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ],
+    "THKBaseKit": [
+      "0.1.0"
+    ]
+  },
+  "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+  "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resource",
+      "resource_bundles": {
+        "THKCustomViewKit": [
+          "BaseKit/THKCustomViewKit/Resource/*",
+          "BaseKit/THKCustomViewKit/README.md"
+        ]
+      },
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a"
+    },
+    {
+      "name": "ThirdView",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "BTScrollBallView",
+          "public_header_files": "BaseKit/THKCustomViewKit/ThirdView/BTScrollBallView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/ThirdView/BTScrollBallView/*"
+        },
+        {
+          "name": "ZoomFlowImageBrower",
+          "public_header_files": "BaseKit/THKCustomViewKit/ThirdView/ZoomFlowImageBrower/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/ThirdView/ZoomFlowImageBrower/*",
+          "dependencies": {
+            "YYWebImage": [
+              "1.0.5"
+            ]
+          }
+        },
+        {
+          "name": "ZYPageControl",
+          "public_header_files": "BaseKit/THKCustomViewKit/ThirdView/ZYPageControl/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/ThirdView/ZYPageControl/*"
+        },
+        {
+          "name": "PopOverMenu",
+          "public_header_files": "BaseKit/THKCustomViewKit/ThirdView/PopOverMenu/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/ThirdView/PopOverMenu/*"
+        }
+      ]
+    },
+    {
+      "name": "TBTCustomView",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "YYWebImage": [
+          "1.0.5"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "THKCustomViewKit/TGallery": [
+          "0.1.0"
+        ],
+        "MBProgressHUD": [
+          "0.9.2"
+        ],
+        "THKCustomHUD": [
+          "0.1.5"
+        ],
+        "TMToast": [
+          "1.0.0"
+        ]
+      },
+      "prefix_header_contents": "#import <Masonry/Masonry.h>\n#import <THKMacroKit/THKMacroKit.h>\n#import \"TBasicView.h\"\n#import <TMUIExtensions/TMUIExtensions.h>\n#import <YYImage/YYAnimatedImageView.h>",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "Category",
+          "public_header_files": "BaseKit/THKCustomViewKit/TBTCustomView/Category/**/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TBTCustomView/Category/**/*"
+        },
+        {
+          "name": "Common",
+          "public_header_files": "BaseKit/THKCustomViewKit/TBTCustomView/Common/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TBTCustomView/Common/*"
+        },
+        {
+          "name": "BasicClass",
+          "public_header_files": "BaseKit/THKCustomViewKit/TBTCustomView/BasicClass/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TBTCustomView/BasicClass/*"
+        },
+        {
+          "name": "CustomView",
+          "public_header_files": "BaseKit/THKCustomViewKit/TBTCustomView/CustomView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TBTCustomView/CustomView/*"
+        },
+        {
+          "name": "ThirdParty",
+          "subspecs": [
+            {
+              "name": "Download-Indicator",
+              "public_header_files": "BaseKit/THKCustomViewKit/TBTCustomView/ThirdParty/Download-Indicator/*.h",
+              "source_files": "BaseKit/THKCustomViewKit/TBTCustomView/ThirdParty/Download-Indicator/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CustomView",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "ReactiveObjC": [
+          "3.1.1"
+        ],
+        "IQKeyboardManager": [
+          "5.0.8"
+        ],
+        "YYWebImage": [
+          "1.0.5"
+        ],
+        "THKCustomToolKit": [
+          "0.1.0"
+        ],
+        "THKCustomHUD": [
+          "0.1.5"
+        ],
+        "TMToast": [
+          "1.0.0"
+        ]
+      },
+      "prefix_header_contents": "#import <Masonry/Masonry.h>\n#import <THKMacroKit/THKMacroKit.h>\n#import <TMUIExtensions/TMUIExtensions.h>\n#import <ReactiveObjC/ReactiveObjC.h>\n#import <YYImage/YYAnimatedImageView.h>\n#import \"UIImageView+TCategory.h\"",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "THKScoreStarView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKScoreStarView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKScoreStarView/*",
+          "resource_bundles": {
+            "THKScoreStarViewAssets": [
+              "BaseKit/THKCustomViewKit/CustomView/THKScoreStarView/Resource/*.png"
+            ]
+          },
+          "subspecs": [
+            {
+              "name": "Resource"
+            }
+          ]
+        },
+        {
+          "name": "THKPickerView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKPickerView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKPickerView/*"
+        },
+        {
+          "name": "TButtonsConditionView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TButtonsConditionView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TButtonsConditionView/*"
+        },
+        {
+          "name": "THKPassWordTextField",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKPassWordTextField/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKPassWordTextField/*"
+        },
+        {
+          "name": "THKImageTitleTagView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKImageTitleTagView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKImageTitleTagView/*"
+        },
+        {
+          "name": "THKGradientCircleProgressView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKGradientCircleProgressView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKGradientCircleProgressView/*"
+        },
+        {
+          "name": "THKImageAndTextActionButton",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKImageAndTextActionButton/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKImageAndTextActionButton/*"
+        },
+        {
+          "name": "THKActionSheetView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKActionSheetView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKActionSheetView/*"
+        },
+        {
+          "name": "THKTagListView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKTagListView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKTagListView/*"
+        },
+        {
+          "name": "TBInsetLabel",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TBInsetLabel/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TBInsetLabel/*"
+        },
+        {
+          "name": "THKLimitTextView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKLimitTextView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKLimitTextView/*"
+        },
+        {
+          "name": "THKPassWordView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKPassWordView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKPassWordView/*"
+        },
+        {
+          "name": "TActionSheetPickerController",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TActionSheetPickerController/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TActionSheetPickerController/*"
+        },
+        {
+          "name": "TDatePicker",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TDatePicker/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TDatePicker/*"
+        },
+        {
+          "name": "TMUICycleCardView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TMUICycleCardView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TMUICycleCardView/*"
+        },
+        {
+          "name": "TMTagsCloudView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TMTagsCloudView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TMTagsCloudView/*"
+        },
+        {
+          "name": "ImageTitleButton",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/ImageTitleButton/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/ImageTitleButton/*"
+        },
+        {
+          "name": "TMainPageNavigationTitleView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TMainPageNavigationTitleView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TMainPageNavigationTitleView/*"
+        },
+        {
+          "name": "THKPageScrollView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKPageScrollView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKPageScrollView/*"
+        },
+        {
+          "name": "THKPageViewController",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKPageViewController/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKPageViewController/*"
+        },
+        {
+          "name": "THKRotationRateImageView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKRotationRateImageView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKRotationRateImageView/*",
+          "frameworks": "CoreMotion"
+        },
+        {
+          "name": "TEmojiView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TEmojiView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TEmojiView/*",
+          "resources": [
+            "BaseKit/THKCustomViewKit/CustomView/TEmojiView/Assets/**/*"
+          ]
+        },
+        {
+          "name": "THKCustomCornerRadiusView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKCustomCornerRadiusView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKCustomCornerRadiusView/*"
+        },
+        {
+          "name": "THKListRefresh",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKListRefresh/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKListRefresh/*",
+          "dependencies": {
+            "Reachability": [
+              "3.2"
+            ]
+          }
+        },
+        {
+          "name": "THKNestTableView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKNestTableView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKNestTableView/*",
+          "dependencies": {
+            "Aspects": [
+              "1.4.1"
+            ]
+          },
+          "frameworks": "WebKit"
+        },
+        {
+          "name": "TCodeCell",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TCodeCell/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TCodeCell/*"
+        },
+        {
+          "name": "THKCustomAlertView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKCustomAlertView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKCustomAlertView/*",
+          "dependencies": {
+            "TMUIComponents": [
+              "2.0.25"
+            ]
+          }
+        },
+        {
+          "name": "THKCircleProgressView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKCircleProgressView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKCircleProgressView/*"
+        },
+        {
+          "name": "THKBannerView",
+          "dependencies": {
+            "THKSafeKit": [
+              "0.1.0"
+            ]
+          },
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKBannerView/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKBannerView/*"
+        },
+        {
+          "name": "TAlertTipController",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TAlertTipController/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TAlertTipController/*",
+          "resource_bundles": {
+            "TAlertTipController": [
+              "BaseKit/THKCustomViewKit/CustomView/TAlertTipController/*.xib"
+            ]
+          }
+        },
+        {
+          "name": "THKConditionView",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/THKConditionView/**/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/THKConditionView/**/*"
+        },
+        {
+          "name": "TPreviewBigImg",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/TPreviewBigImg/**/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/TPreviewBigImg/**/*",
+          "dependencies": {
+            "Godeye": [
+              "1.1.3"
+            ],
+            "TMUICore": [
+              "2.0.25"
+            ]
+          }
+        },
+        {
+          "name": "CheckWifiAlert",
+          "public_header_files": "BaseKit/THKCustomViewKit/CustomView/CheckWifiAlert/**/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/CustomView/CheckWifiAlert/**/*",
+          "dependencies": {
+            "Reachability": [
+              "3.2"
+            ],
+            "TMToast": [
+              "1.0.0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "TBasicView",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a"
+    },
+    {
+      "name": "TRefresh",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "dependencies": {
+        "TMJRefresh": [
+
+        ],
+        "Lottie": [
+          "2.5.3"
+        ],
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUICore": [
+          "2.0.25"
+        ],
+        "THKBaseNetwork": [
+          "0.3.1"
+        ],
+        "TMEmptyView": [
+          "1.0.0"
+        ],
+        "THKCustomViewKit/TBTCustomView": [
+          "0.1.0"
+        ]
+      },
+      "prefix_header_contents": "#import <Masonry/Masonry.h>\n#import <THKMacroKit/THKMacroKit.h>",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "Resource",
+          "resource_bundles": {
+            "TRefreshAssets": [
+              "BaseKit/THKCustomViewKit/TRefresh/Resource/*"
+            ]
+          }
+        },
+        {
+          "name": "THKRefreshUIKit",
+          "public_header_files": "BaseKit/THKCustomViewKit/TRefresh/THKRefreshUIKit/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TRefresh/THKRefreshUIKit/*"
+        },
+        {
+          "name": "THKOldRefresh",
+          "public_header_files": "BaseKit/THKCustomViewKit/TRefresh/THKOldRefresh/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TRefresh/THKOldRefresh/*"
+        },
+        {
+          "name": "PrivateUI",
+          "public_header_files": "BaseKit/THKCustomViewKit/TRefresh/PrivateUI/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TRefresh/PrivateUI/*"
+        },
+        {
+          "name": "THKMJ",
+          "public_header_files": "BaseKit/THKCustomViewKit/TRefresh/THKMJ/*.h",
+          "source_files": "BaseKit/THKCustomViewKit/TRefresh/THKMJ/*"
+        }
+      ]
+    },
+    {
+      "name": "THKSearchBaseView",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUIComponents": [
+          "2.0.25"
+        ],
+        "THKCustomToolKit": [
+          "0.1.0"
+        ]
+      },
+      "prefix_header_contents": "#import <THKMacroKit/THKMacroKit.h>",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a"
+    },
+    {
+      "name": "TGallery",
+      "public_header_files": "bin_THKCustomViewKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCustomViewKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "TMUICore": [
+          "2.0.25"
+        ]
+      },
+      "resource_bundles": {
+        "TGallery": [
+          "BaseKit/THKCustomViewKit/TGallery/**/*.xib"
+        ]
+      },
+      "prefix_header_contents": "#import <THKMacroKit/THKMacroKit.h>",
+      "vendored_libraries": "bin_THKCustomViewKit_0.1.0/*.a"
+    }
+  ]
+}
