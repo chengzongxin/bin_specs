@@ -1,0 +1,111 @@
+{
+  "name": "THKInitConfigKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKInitConfigKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKInitConfigKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <ReactiveObjC/ReactiveObjC.h>",
+  "dependencies": {
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "Godeye": [
+      "1.1.3"
+    ],
+    "THKBaseNetwork": [
+      "0.3.1"
+    ],
+    "THKBusinessToolKit": [
+      "0.1.0"
+    ],
+    "TMToast": [
+      "1.0.0"
+    ],
+    "THKRouterKit": [
+      "0.1.0"
+    ]
+  },
+  "resources": "bin_THKInitConfigKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Request",
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKCustomToolKit": [
+
+        ],
+        "THKRealTimeDataKit": [
+
+        ]
+      },
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Applink",
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "dependencies": {
+        "TRouter": [
+
+        ]
+      },
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "AwakeReportManager",
+      "dependencies": {
+        "TMUIExtensions": [
+
+        ]
+      },
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "ASAManager",
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "NewInstallPush",
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "UniversalLink",
+      "public_header_files": "bin_THKInitConfigKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInitConfigKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInitConfigKit_0.1.0/*.a",
+      "resources": "bin_THKInitConfigKit_0.1.0/Resources/*"
+    }
+  ]
+}
