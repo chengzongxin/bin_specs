@@ -1,0 +1,29 @@
+{
+  "name": "TUserAvatarView",
+  "version": "0.0.1",
+  "summary": "A short description of TUserAvatarView.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 带v字认证标识的头像视图封装",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nigel.ning": "nigel.ning@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TUserAvatarView/0.0.1/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.2"
+  },
+  "source_files": "bin_TUserAvatarView_0.0.1/Headers/*",
+  "prefix_header_contents": "#import \"TUserAvatarView.h\"",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "public_header_files": "bin_TUserAvatarView_0.0.1/Headers/*.h",
+  "vendored_libraries": "bin_TUserAvatarView_0.0.1/*.a"
+}
