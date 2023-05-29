@@ -1,0 +1,72 @@
+{
+  "name": "Lottie",
+  "version": "2.5.3",
+  "summary": "Lottie动画Objective-C实现",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 基于Lottie官方源码调整目录封装",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": "MIT",
+  "authors": {
+    "turing.xiong": "turing.xiong@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/Lottie/2.5.3/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "bin_Lottie_2.5.3/Headers/*",
+  "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+  "vendored_libraries": "bin_Lottie_2.5.3/*.a",
+  "subspecs": [
+    {
+      "name": "AnimatableLayers",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "AnimatableProperties",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "Extensions",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "MacCompatibility",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "Models",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "Private",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "PublicHeaders",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    },
+    {
+      "name": "RenderSystem",
+      "source_files": "bin_Lottie_2.5.3/Headers/*",
+      "public_header_files": "bin_Lottie_2.5.3/Headers/*.h",
+      "vendored_libraries": "bin_Lottie_2.5.3/*.a"
+    }
+  ]
+}
