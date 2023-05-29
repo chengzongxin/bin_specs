@@ -1,0 +1,37 @@
+{
+  "name": "TMEmptyView",
+  "version": "1.0.0",
+  "summary": "实现自定义空界面占位视图",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 基于TMUIKit库抽离实现",
+  "homepage": "http://repo.we.com/tubroker/tmuikit",
+  "license": "MIT",
+  "authors": {
+    "jerry.jiang": "jerry.jiang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TMEmptyView/1.0.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "bin_TMEmptyView_1.0.0/Headers/*",
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ]
+  },
+  "resources": "bin_TMEmptyView_1.0.0/Resources/*",
+  "public_header_files": "bin_TMEmptyView_1.0.0/Headers/*.h",
+  "vendored_libraries": "bin_TMEmptyView_1.0.0/*.a",
+  "subspecs": [
+    {
+      "name": "Content",
+      "source_files": "bin_TMEmptyView_1.0.0/Headers/*",
+      "public_header_files": "bin_TMEmptyView_1.0.0/Headers/*.h",
+      "vendored_libraries": "bin_TMEmptyView_1.0.0/*.a",
+      "resources": "bin_TMEmptyView_1.0.0/Resources/*"
+    }
+  ]
+}
