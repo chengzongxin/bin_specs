@@ -1,0 +1,22 @@
+{
+  "name": "MGSwipeTableCell",
+  "version": "1.6.11",
+  "authors": {
+    "Imanol Fernandez": "mortimergoro@gmail.com"
+  },
+  "homepage": "https://github.com/MortimerGoro/MGSwipeTableCell",
+  "summary": "An easy to use UITableViewCell subclass that allows to display swipeable buttons with a variety of transitions",
+  "license": "MIT",
+  "source": {
+    "http": "http://localhost:8080/frameworks/MGSwipeTableCell/1.6.11/zip",
+    "type": "zip"
+  },
+  "source_files": "bin_MGSwipeTableCell_1.6.11/Headers/*",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "public_header_files": "bin_MGSwipeTableCell_1.6.11/Headers/*.h",
+  "vendored_libraries": "bin_MGSwipeTableCell_1.6.11/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」"
+}
