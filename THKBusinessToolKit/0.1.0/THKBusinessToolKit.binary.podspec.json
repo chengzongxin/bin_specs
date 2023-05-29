@@ -1,0 +1,224 @@
+{
+  "name": "THKBusinessToolKit",
+  "version": "0.1.0",
+  "summary": "业务工具类",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "collen.zhang": "collen.zhang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKBusinessToolKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "static_framework": true,
+  "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+  "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseBusinessKit/THKBusinessToolKit/README.md"
+      ],
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "Category",
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKBaseUIKit": [
+          "0.1.0"
+        ],
+        "THKCustomViewKit/TBTCustomView": [
+          "0.1.0"
+        ],
+        "THKSafeKit": [
+          "0.1.0"
+        ],
+        "IQKeyboardManager": [
+          "5.0.8"
+        ]
+      },
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "String",
+          "public_header_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/String/*.h",
+          "source_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/String/*"
+        },
+        {
+          "name": "ViewController",
+          "public_header_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/ViewController/*.h",
+          "source_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/ViewController/*"
+        },
+        {
+          "name": "NSObject",
+          "public_header_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/NSObject/*.h",
+          "source_files": "BaseBusinessKit/THKBusinessToolKit/THKBusinessToolKit/Classes/Category/NSObject/*"
+        }
+      ]
+    },
+    {
+      "name": "PayHandler",
+      "dependencies": {
+        "THKPayKit": [
+          "0.1.0"
+        ],
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUICore": [
+          "2.0.25"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "TRsaTool",
+      "dependencies": {
+        "TMTools": [
+          "0.1.3"
+        ],
+        "BaiduMapKit": [
+          "6.3.0"
+        ],
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "prefix_header_contents": "#import <THKMacroKit/THKMacroKit.h>\n#import <TMUIExtensions/TMUIExtensions.h>",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "ABTest",
+      "dependencies": {
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "Godeye": [
+          "1.1.3"
+        ],
+        "TRouter": [
+          "1.0.0"
+        ],
+        "THKNetworkKit": [
+          "0.1.0"
+        ],
+        "THKSafeKit": [
+          "0.1.0"
+        ],
+        "THKModuleService": [
+          "0.1.0"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "TAD",
+      "dependencies": {
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "THKRouterKit": [
+          "0.1.0"
+        ],
+        "THKCustomViewKit/TBasicView": [
+          "0.1.0"
+        ],
+        "THKCustomToolKit": [
+          "0.1.0"
+        ],
+        "THKRealTimeDataKit": [
+          "0.1.0"
+        ],
+        "THKNetworkKit": [
+          "0.1.0"
+        ],
+        "THKSafeKit": [
+          "0.1.0"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "prefix_header_contents": "#import <TMUIExtensions/TMUIExtensions.h>\n#import <THKCustomViewKit/TBasicView.h>\n#import <THKRealTimeDataKit/THKRealTimeDataKit.h>\n#import <THKNetworkKit/THKNetworkKit.h>\n#import <THKRouterKit/THKRouterKit.h>",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "OSSTool",
+      "dependencies": {
+        "THKOSSManager": [
+          "2.0.3"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "THKNetworkKit": [
+          "0.1.0"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKCityTool",
+      "dependencies": {
+        "THKNetworkKit": [
+          "0.1.0"
+        ],
+        "YYCache": [
+          "1.0.4"
+        ],
+        "THKSafeKit": [
+          "0.1.0"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "LogUploadManager",
+      "dependencies": {
+        "THKNetworkKit": [
+          "0.1.0"
+        ],
+        "TYYKit": [
+          "0.0.4"
+        ],
+        "SSZipArchive": [
+          "2.2.3"
+        ],
+        "TBTLog": [
+          "0.1.8"
+        ],
+        "THKRealTimeDataKit": [
+          "0.1.0"
+        ]
+      },
+      "public_header_files": "bin_THKBusinessToolKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKBusinessToolKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKBusinessToolKit_0.1.0/*.a"
+    }
+  ]
+}
