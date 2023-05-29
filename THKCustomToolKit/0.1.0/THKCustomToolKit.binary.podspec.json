@@ -1,0 +1,253 @@
+{
+  "name": "THKCustomToolKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKCustomToolKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKCustomToolKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+  "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseKit/THKCustomToolKit/README.md"
+      ],
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKScreenshotHelper",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": [
+        "Foundation",
+        "UIKit",
+        "QuartzCore"
+      ],
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKQRCodeUtil",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKTellPhone",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKTickTimer",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKLocationTool",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": [
+        "Foundation",
+        "CoreLocation"
+      ],
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKUtilityViewTool",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "Masonry": [
+          "1.1.0"
+        ]
+      },
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "CornerRadius",
+          "source_files": "BaseKit/THKCustomToolKit/THKUtilityViewTool/CornerRadius/**/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKUtilityViewTool/CornerRadius/**/*.h"
+        },
+        {
+          "name": "THKUtilityView",
+          "source_files": "BaseKit/THKCustomToolKit/THKUtilityViewTool/THKUtilityView/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKUtilityViewTool/THKUtilityView/*.h"
+        }
+      ]
+    },
+    {
+      "name": "THKTextLimitTool",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "UIKit",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "CounterTF",
+          "source_files": "BaseKit/THKCustomToolKit/THKTextLimitTool/CounterTF/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKAnimationTool/CounterTF/*.h"
+        },
+        {
+          "name": "THKInputViewLimit",
+          "source_files": "BaseKit/THKCustomToolKit/THKTextLimitTool/THKInputViewLimit/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKAnimationTool/THKInputViewLimit/*.h"
+        }
+      ]
+    },
+    {
+      "name": "THKAnimationTool",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "BTCoverHorizontalTransition",
+          "source_files": "BaseKit/THKCustomToolKit/THKAnimationTool/BTCoverHorizontalTransition/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKAnimationTool/BTCoverHorizontalTransition/*.h"
+        }
+      ]
+    },
+    {
+      "name": "THKFuncTimeMesureTool",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "dependencies": {
+        "Aspects": [
+          "1.4.1"
+        ]
+      },
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "TObject",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "dependencies": {
+        "MJExtension": [
+          "3.2.1"
+        ]
+      },
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "HttpLogModel",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "dependencies": {
+        "YYWebImage": [
+          "1.0.5"
+        ]
+      },
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKCategoryTools",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "dependencies": {
+        "GTMBase64": [
+          "1.0.1"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "THKBaseNetwork": [
+          "0.3.1"
+        ],
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "TUUIDGenerator": [
+          "0.2.0"
+        ]
+      },
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "NSData",
+          "source_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSData/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSData/*.h",
+          "frameworks": "Foundation"
+        },
+        {
+          "name": "NSUserDefaults",
+          "source_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSUserDefaults/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSUserDefaults/*.h"
+        },
+        {
+          "name": "UIDevice",
+          "source_files": "BaseKit/THKCustomToolKit/THKCategoryTools/UIDevice/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKCategoryTools/UIDevice/*.h"
+        },
+        {
+          "name": "NSArray",
+          "source_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSArray/*",
+          "public_header_files": "BaseKit/THKCustomToolKit/THKCategoryTools/NSArray/*.h"
+        }
+      ]
+    },
+    {
+      "name": "TSNSLib",
+      "source_files": "bin_THKCustomToolKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCustomToolKit_0.1.0/Headers/*.h",
+      "frameworks": "Foundation",
+      "dependencies": {
+        "MJExtension": [
+          "3.2.1"
+        ],
+        "TencentOpenAPI-Mirror": [
+          "3.3.9"
+        ],
+        "WechatOpenSDK": [
+          "1.8.5"
+        ],
+        "Weibo_SDK": [
+          "3.3.0"
+        ],
+        "THKMacroKit": [
+          "0.1.0"
+        ],
+        "THKBaseNetwork": [
+          "0.3.1"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ],
+        "THKCustomHUD": [
+          "0.1.5"
+        ],
+        "TMToast": [
+          "1.0.0"
+        ]
+      },
+      "prefix_header_contents": "#import \"TSNSLib.h\"\n#import <THKMacroKit/THKMacroKit.h>\n#import <TMUIExtensions/TMUIExtensions.h>",
+      "vendored_libraries": "bin_THKCustomToolKit_0.1.0/*.a"
+    }
+  ]
+}
