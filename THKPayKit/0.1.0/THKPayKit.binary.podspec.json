@@ -1,0 +1,41 @@
+{
+  "name": "THKPayKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKPayKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amby.qin/THKPayKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKPayKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "requires_arc": true,
+  "static_framework": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "public_header_files": "bin_THKPayKit_0.1.0/Headers/*.h",
+  "source_files": "bin_THKPayKit_0.1.0/Headers/*",
+  "dependencies": {
+    "WechatOpenSDK": [
+      "1.8.5"
+    ],
+    "PingppAlipaySDKNoUTDID": [
+      "15.7.9"
+    ],
+    "UMCSecurityPlugins": [
+      "1.0.6"
+    ]
+  },
+  "frameworks": [
+    "CoreMotion"
+  ],
+  "resources": "bin_THKPayKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKPayKit_0.1.0/*.a"
+}
