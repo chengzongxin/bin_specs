@@ -1,0 +1,420 @@
+{
+  "name": "THKPhotoKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKPhotoKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKPhotoKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <THKPhotoKit/THKPhotoKit_BaseDefine.h>",
+  "dependencies": {
+    "THKBaseNetwork": [
+      "0.3.1"
+    ],
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ],
+    "THKAnimationKit": [
+      "0.1.0"
+    ],
+    "Godeye": [
+      "1.1.3"
+    ],
+    "THKBaseUIKit": [
+      "0.1.0"
+    ],
+    "GPUImage": [
+      "0.1.7"
+    ],
+    "TYYKit": [
+      "0.0.4"
+    ],
+    "SSZipArchive": [
+      "2.2.3"
+    ],
+    "RSKImageCropper": [
+      "2.2.3"
+    ]
+  },
+  "resources": "bin_THKPhotoKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "ImageEffect",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "ViewModel",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/ViewModel/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/ViewModel/*"
+        },
+        {
+          "name": "Handle",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Handle/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Handle/*"
+        },
+        {
+          "name": "Crop",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/*",
+          "subspecs": [
+            {
+              "name": "ViewModel",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/ViewModel/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/ViewModel/*"
+            },
+            {
+              "name": "View",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/View/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/View/*",
+              "subspecs": [
+                {
+                  "name": "LEGOCrop",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/View/LEGOCrop/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Crop/View/LEGOCrop/*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sticker",
+          "subspecs": [
+            {
+              "name": "ViewModel",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/ViewModel/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/ViewModel/*"
+            },
+            {
+              "name": "Manager",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Manager/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Manager/*"
+            },
+            {
+              "name": "Common",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/*",
+              "subspecs": [
+                {
+                  "name": "Basic",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Basic/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Basic/*"
+                },
+                {
+                  "name": "Protocol",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/*",
+                  "subspecs": [
+                    {
+                      "name": "BasicMoel",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/BasicMoel/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/BasicMoel/*"
+                    },
+                    {
+                      "name": "Model",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/Model/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/Model/*"
+                    },
+                    {
+                      "name": "View",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/View/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Common/Protocol/View/*"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "VC"
+            },
+            {
+              "name": "View"
+            },
+            {
+              "name": "Tool",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/*",
+              "subspecs": [
+                {
+                  "name": "ColorImageTool",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorImageTool/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorImageTool/*"
+                },
+                {
+                  "name": "ColorTextTool",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/*",
+                  "subspecs": [
+                    {
+                      "name": "ViewModel",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/ViewModel/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/ViewModel/*"
+                    },
+                    {
+                      "name": "Model",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/Model/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/Model/*"
+                    },
+                    {
+                      "name": "View",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/View/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/ColorTextTool/View/*"
+                    }
+                  ]
+                },
+                {
+                  "name": "CustomTextTool",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/*",
+                  "subspecs": [
+                    {
+                      "name": "ViewModel",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/ViewModel/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/ViewModel/*"
+                    },
+                    {
+                      "name": "Model",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/Model/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/Model/*"
+                    },
+                    {
+                      "name": "View",
+                      "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/View/*.h",
+                      "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Sticker/Tool/CustomTextTool/View/*"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Common",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Common/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Common/*"
+        },
+        {
+          "name": "VC"
+        },
+        {
+          "name": "View",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/View/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/View/*"
+        },
+        {
+          "name": "Filter",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/*",
+          "subspecs": [
+            {
+              "name": "ViewModel",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/ViewModel/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/ViewModel/*"
+            },
+            {
+              "name": "Other",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/Other/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/Other/*"
+            },
+            {
+              "name": "View",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/View/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/ImageEffect/Filter/View/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VC",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "Camera",
+          "subspecs": [
+            {
+              "name": "Manager",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/Manager/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/Manager/*"
+            },
+            {
+              "name": "VC",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/VC/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/VC/*"
+            },
+            {
+              "name": "Model",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/Model/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/Model/*"
+            },
+            {
+              "name": "View",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/View/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Camera/View/*"
+            }
+          ]
+        },
+        {
+          "name": "ShortVideo",
+          "subspecs": [
+            {
+              "name": "ViewModel",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/ViewModel/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/ViewModel/*"
+            },
+            {
+              "name": "View",
+              "subspecs": [
+                {
+                  "name": "CropView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/CropView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/CropView/*"
+                },
+                {
+                  "name": "TableViewCell",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/TableViewCell/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/TableViewCell/*"
+                },
+                {
+                  "name": "CoverPickView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/CoverPickView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/CoverPickView/*"
+                },
+                {
+                  "name": "ControllerView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/ControllerView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/ControllerView/*"
+                },
+                {
+                  "name": "ProgressView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/ProgressView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/View/ProgressView/*"
+                }
+              ]
+            },
+            {
+              "name": "ViewController",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/ViewController/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/ShortVideo/ViewController/*"
+            }
+          ]
+        },
+        {
+          "name": "Crop",
+          "subspecs": [
+            {
+              "name": "VC",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Crop/VC/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Crop/VC/*"
+            }
+          ]
+        },
+        {
+          "name": "Album",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/*",
+          "subspecs": [
+            {
+              "name": "ViewModel",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/ViewModel/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/ViewModel/*"
+            },
+            {
+              "name": "VC",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/VC/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/VC/*"
+            },
+            {
+              "name": "Model",
+              "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/Model/*.h",
+              "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/Model/*"
+            },
+            {
+              "name": "View",
+              "subspecs": [
+                {
+                  "name": "EditView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/EditView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/EditView/*"
+                },
+                {
+                  "name": "FilterMenu",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/FilterMenu/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/FilterMenu/*"
+                },
+                {
+                  "name": "Preview",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/Preview/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/Preview/*"
+                },
+                {
+                  "name": "ChooseView",
+                  "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/ChooseView/*.h",
+                  "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/VC/Album/View/ChooseView/*"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Model",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "View",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "TabBar",
+          "public_header_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/View/TabBar/*.h",
+          "source_files": "BaseBusinessKit/THKPhotoKit/THKPhotoKit/Classes/View/TabBar/*"
+        }
+      ]
+    },
+    {
+      "name": "Nav",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Authorization",
+      "public_header_files": "bin_THKPhotoKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKPhotoKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKPhotoKit_0.1.0/*.a",
+      "resources": "bin_THKPhotoKit_0.1.0/Resources/*"
+    }
+  ]
+}
