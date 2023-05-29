@@ -1,0 +1,57 @@
+{
+  "name": "THKVerifyCodeKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKVerifyCodeKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKVerifyCodeKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKVerifyCodeKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKVerifyCodeKit_0.1.0/Headers/*.h",
+  "dependencies": {
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "THKBaseKit": [
+      "0.1.0"
+    ],
+    "THKBaseUIKit": [
+      "0.1.0"
+    ],
+    "THKBusinessToolKit/TRsaTool": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "THKCustomViewKit/TBTCustomView": [
+      "0.1.0"
+    ],
+    "TMUICore": [
+      "2.0.25"
+    ],
+    "TYYKit": [
+      "0.0.4"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "THKRealTimeDataKit": [
+      "0.1.0"
+    ]
+  },
+  "resources": "bin_THKVerifyCodeKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKVerifyCodeKit_0.1.0/*.a"
+}
