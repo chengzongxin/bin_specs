@@ -1,0 +1,37 @@
+{
+  "name": "TMImageBrowser",
+  "version": "0.1.6",
+  "summary": "图片浏览器",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 大图预览",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TMImageBrowser/0.1.6/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_TMImageBrowser_0.1.6/Headers/*",
+  "public_header_files": "bin_TMImageBrowser_0.1.6/Headers/*.h",
+  "prefix_header_contents": [
+    "#import \"Masonry.h\"",
+    "#import <YYImage/YYImage.h>",
+    "#import \"TMDefine.h\""
+  ],
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "YYWebImage": [
+      "1.0.5"
+    ]
+  },
+  "vendored_libraries": "bin_TMImageBrowser_0.1.6/*.a"
+}
