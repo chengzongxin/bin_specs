@@ -1,0 +1,39 @@
+{
+  "name": "LSTPopView",
+  "version": "0.3.10",
+  "summary": "LSTPopView是一个iOS万能弹窗组件",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n LSTPopView 万能弹窗,功能强大,易于拓展,性能优化和内存控制让其运行更加的流畅和稳健, LSTPopView的出现,可以让我们更专注弹窗页面的布局. 省心省力 ! 提高开发效率 !",
+  "homepage": "https://github.com/LoSenTrad/LSTPopView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "490790096@qq.com": "LoSenTrad@163.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/LSTPopView/0.3.10/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Code",
+  "dependencies": {
+    "LSTTimer": [
+
+    ]
+  },
+  "source_files": "bin_LSTPopView_0.3.10/Headers/*",
+  "public_header_files": "bin_LSTPopView_0.3.10/Headers/*.h",
+  "vendored_libraries": "bin_LSTPopView_0.3.10/*.a",
+  "subspecs": [
+    {
+      "name": "Code",
+      "source_files": "bin_LSTPopView_0.3.10/Headers/*",
+      "frameworks": "UIKit",
+      "public_header_files": "bin_LSTPopView_0.3.10/Headers/*.h",
+      "vendored_libraries": "bin_LSTPopView_0.3.10/*.a"
+    }
+  ]
+}
