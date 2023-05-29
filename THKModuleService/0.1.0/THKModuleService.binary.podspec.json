@@ -1,0 +1,155 @@
+{
+  "name": "THKModuleService",
+  "version": "0.1.0",
+  "summary": "模块服务类",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKModuleService/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+  "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <THKMediatorKit/THKMediatorKit.h>",
+  "dependencies": {
+    "THKMediatorKit": [
+      "0.1.0"
+    ],
+    "THKMacroKit": [
+      "0.1.0"
+    ]
+  },
+  "resources": "bin_THKModuleService_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "ModuleHelper",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKLoginModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKUserHomePageModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKInspirationLibraryModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKVideoModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKCaseModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKPublishModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKIMChatModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKAppMainModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKHomeModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKMineModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKCompanyModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKMessageCenterModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKDiaryModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKUgcModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKAskAnswerModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    },
+    {
+      "name": "THKThirdPartyModule",
+      "source_files": "bin_THKModuleService_0.1.0/Headers/*",
+      "public_header_files": "bin_THKModuleService_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKModuleService_0.1.0/*.a",
+      "resources": "bin_THKModuleService_0.1.0/Resources/*"
+    }
+  ]
+}
