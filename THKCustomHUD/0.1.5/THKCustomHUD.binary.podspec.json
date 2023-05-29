@@ -1,0 +1,56 @@
+{
+  "name": "THKCustomHUD",
+  "version": "0.1.5",
+  "summary": "A short description of THKCustomHUD.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 自定义的类似MBProgressHUD效果的hud组件",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nigel.ning": "nigel.ning@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKCustomHUD/0.1.5/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKCustomHUD_0.1.5/Headers/*",
+  "prefix_header_contents": "#import \"THKCustomHUD.h\"",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "AVFoundation"
+  ],
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ],
+    "Lottie": [
+      "2.5.3"
+    ]
+  },
+  "resources": "bin_THKCustomHUD_0.1.5/Resources/*",
+  "public_header_files": "bin_THKCustomHUD_0.1.5/Headers/*.h",
+  "vendored_libraries": "bin_THKCustomHUD_0.1.5/*.a",
+  "subspecs": [
+    {
+      "name": "THKCustomHUD",
+      "source_files": "bin_THKCustomHUD_0.1.5/Headers/*",
+      "private_header_files": "THKCustomHUD/Pod/Classes/THKCustomHUD/Private/THKCustomHUDContentView.h",
+      "public_header_files": "bin_THKCustomHUD_0.1.5/Headers/*.h",
+      "vendored_libraries": "bin_THKCustomHUD_0.1.5/*.a",
+      "resources": "bin_THKCustomHUD_0.1.5/Resources/*"
+    },
+    {
+      "name": "THKSnsHUD",
+      "source_files": "bin_THKCustomHUD_0.1.5/Headers/*",
+      "public_header_files": "bin_THKCustomHUD_0.1.5/Headers/*.h",
+      "vendored_libraries": "bin_THKCustomHUD_0.1.5/*.a",
+      "resources": "bin_THKCustomHUD_0.1.5/Resources/*"
+    }
+  ]
+}
