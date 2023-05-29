@@ -1,0 +1,80 @@
+{
+  "name": "THKGuideAlertKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKGuideAlertKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKGuideAlertKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "static_framework": true,
+  "public_header_files": "bin_THKGuideAlertKit_0.1.0/Headers/*.h",
+  "source_files": "bin_THKGuideAlertKit_0.1.0/Headers/*",
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ],
+    "THKBaseKit": [
+      "0.1.0"
+    ],
+    "THKMacroKit": [
+      "0.1.0"
+    ],
+    "Godeye": [
+      "1.1.3"
+    ],
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ]
+  },
+  "vendored_libraries": "bin_THKGuideAlertKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "THKCommentGuideView",
+      "source_files": "bin_THKGuideAlertKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKGuideAlertKit_0.1.0/Headers/*.h",
+      "dependencies": {
+        "THKGuideAlertKit/THKPushOpenAlertView": [
+          "0.1.0"
+        ]
+      },
+      "vendored_libraries": "bin_THKGuideAlertKit_0.1.0/*.a"
+    },
+    {
+      "name": "THKPushOpenAlertView",
+      "source_files": "bin_THKGuideAlertKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKGuideAlertKit_0.1.0/Headers/*.h",
+      "dependencies": {
+        "TMUIExtensions": [
+          "2.0.25"
+        ]
+      },
+      "vendored_libraries": "bin_THKGuideAlertKit_0.1.0/*.a"
+    },
+    {
+      "name": "TMaskGuide",
+      "source_files": "bin_THKGuideAlertKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKGuideAlertKit_0.1.0/Headers/*.h",
+      "dependencies": {
+        "TMUICore": [
+          "2.0.25"
+        ]
+      },
+      "vendored_libraries": "bin_THKGuideAlertKit_0.1.0/*.a"
+    }
+  ]
+}
