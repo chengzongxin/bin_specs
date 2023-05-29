@@ -1,0 +1,38 @@
+{
+  "name": "TMUICore",
+  "version": "2.0.25",
+  "summary": "TMUIKit 是个UI库，包含UI，组件，宏，库工具等。",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n          'TMUIKit iOS 是一个致力于提高项目 UI 开发效率的组件库，为工程提供一些通用的UI基础库及功能组件库以及一些通用的工具库。\n旨在帮助快速高效的构建工程的基础设计元素，以及统一维护基础元素的版本兼容性处理，助于提高开发效率和项目质量。'",
+  "homepage": "http://repo.we.com/tubroker/tmuikit.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chengzongxin": "joe.cheng@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TMUICore/2.0.25/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "public_header_files": "bin_TMUICore_2.0.25/Headers/*.h",
+  "source_files": "bin_TMUICore_2.0.25/Headers/*",
+  "vendored_libraries": "bin_TMUICore_2.0.25/*.a",
+  "subspecs": [
+    {
+      "name": "TMUICore",
+      "source_files": "bin_TMUICore_2.0.25/Headers/*",
+      "public_header_files": "bin_TMUICore_2.0.25/Headers/*.h",
+      "frameworks": [
+        "Foundation",
+        "UIKit",
+        "CoreGraphics"
+      ],
+      "vendored_libraries": "bin_TMUICore_2.0.25/*.a"
+    }
+  ]
+}
