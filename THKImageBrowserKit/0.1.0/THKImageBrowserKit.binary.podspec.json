@@ -1,0 +1,129 @@
+{
+  "name": "THKImageBrowserKit",
+  "version": "0.1.0",
+  "summary": "大图业务组件",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKImageBrowserKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <THKImageBrowserKit/THKImageBrowserKit_BaseDefine.h>",
+  "dependencies": {
+    "THKInteractiveKit": [
+      "0.1.0"
+    ],
+    "TMImageBrowser": [
+      "0.1.6"
+    ],
+    "THKPhotoKit": [
+      "0.1.0"
+    ],
+    "THKBusinessViewKit/THKAvatarView": [
+      "0.1.0"
+    ],
+    "THKBusinessViewKit/TImmersiveContentDescView": [
+      "0.1.0"
+    ],
+    "THKGuideAlertKit/TMaskGuide": [
+      "0.1.0"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "THKBusinessViewKit/TCaseFloatButton": [
+      "0.1.0"
+    ]
+  },
+  "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Tools",
+      "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+      "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "THKImgBrowserEditView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserEditView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserEditView/*"
+        },
+        {
+          "name": "THKImgBrowserTopView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserTopView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserTopView/*"
+        },
+        {
+          "name": "THKImgBrowserUserTopView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserUserTopView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserUserTopView/*"
+        },
+        {
+          "name": "THKImgBrowserCommentInteractiveView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserCommentInteractiveView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserCommentInteractiveView/*"
+        },
+        {
+          "name": "THKImgBrowserIMInteractiveView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserIMInteractiveView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserIMInteractiveView/*"
+        },
+        {
+          "name": "THKImgBrowserBottomView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserBottomView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserBottomView/*"
+        },
+        {
+          "name": "THKImgBrowserTagTopView",
+          "public_header_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserTagTopView/*.h",
+          "source_files": "BaseBusinessKit/THKImageBrowserKit/THKImageBrowserKit/Classes/Tools/THKImgBrowserTagTopView/*"
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+      "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Edit",
+      "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+      "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Normal",
+      "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+      "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Case",
+      "public_header_files": "bin_THKImageBrowserKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKImageBrowserKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKImageBrowserKit_0.1.0/*.a",
+      "resources": "bin_THKImageBrowserKit_0.1.0/Resources/*"
+    }
+  ]
+}
