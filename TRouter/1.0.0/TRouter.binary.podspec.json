@@ -1,0 +1,25 @@
+{
+  "name": "TRouter",
+  "version": "1.0.0",
+  "summary": "A short description of TRouter.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 增加了是否需要登录的判断，对url中的needLogin字段进行解析",
+  "homepage": "http://repo.we.com/tubroker/TRouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "elvis": "elvis.peng@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TRouter/1.0.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_TRouter_1.0.0/Headers/*",
+  "frameworks": "UIKit",
+  "public_header_files": "bin_TRouter_1.0.0/Headers/*.h",
+  "vendored_libraries": "bin_TRouter_1.0.0/*.a"
+}
