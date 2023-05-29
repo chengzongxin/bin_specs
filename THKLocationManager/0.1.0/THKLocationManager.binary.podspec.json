@@ -1,0 +1,40 @@
+{
+  "name": "THKLocationManager",
+  "version": "0.1.0",
+  "summary": "定位库，做了优化，把cityId功能去掉了，用来替换TLocationHander",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKLocationManager/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKLocationManager_0.1.0/Headers/*",
+  "public_header_files": "bin_THKLocationManager_0.1.0/Headers/*.h",
+  "frameworks": [
+    "MapKit",
+    "CoreLocation"
+  ],
+  "dependencies": {
+    "Reachability": [
+      "3.2"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "TMUICore": [
+      "2.0.25"
+    ]
+  },
+  "resources": "bin_THKLocationManager_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKLocationManager_0.1.0/*.a"
+}
