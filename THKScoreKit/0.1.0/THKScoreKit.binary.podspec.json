@@ -1,0 +1,68 @@
+{
+  "name": "THKScoreKit",
+  "version": "0.1.0",
+  "summary": "积分库",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent/THKScoreKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "collen.zhang": "collen.zhang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKScoreKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKScoreKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKScoreKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#ifdef __OBJC__\n#import <THKMacroKit/THKBlockDefine.h>\n#import <TMUIExtensions/TMUIExtensions.h>\n#endif",
+  "dependencies": {
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "TCoinTaskModule": [
+      "0.0.9"
+    ],
+    "TMUIComponents": [
+      "2.0.25"
+    ],
+    "THKMacroKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "THKRealTimeDataKit": [
+      "0.1.0"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ],
+    "THKBaseNetwork": [
+      "0.3.1"
+    ]
+  },
+  "resources": "bin_THKScoreKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKScoreKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Network",
+      "public_header_files": "bin_THKScoreKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKScoreKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKScoreKit_0.1.0/*.a",
+      "resources": "bin_THKScoreKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "View",
+      "public_header_files": "bin_THKScoreKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKScoreKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKScoreKit_0.1.0/*.a",
+      "resources": "bin_THKScoreKit_0.1.0/Resources/*"
+    }
+  ]
+}
