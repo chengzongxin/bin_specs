@@ -1,0 +1,191 @@
+{
+  "name": "THKCardComponentKit",
+  "version": "0.1.0",
+  "summary": "瀑布流组件",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKCardComponentKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <THKCardComponentKit/THKCardComponentKit_BaseDefine.h>",
+  "dependencies": {
+    "THKMacroKit": [
+      "0.1.0"
+    ],
+    "THKBaseUIKit": [
+      "0.1.0"
+    ],
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "TRouter": [
+      "1.0.0"
+    ],
+    "THKCustomViewKit/CustomView": [
+      "0.1.0"
+    ],
+    "TUserAvatarView": [
+      "0.0.1"
+    ],
+    "TBTLog": [
+      "0.1.8"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ],
+    "THKBusinessToolKit": [
+      "0.1.0"
+    ],
+    "THKInteractiveKit": [
+      "0.1.0"
+    ]
+  },
+  "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resource",
+      "resource_bundles": {
+        "THKCardComponentKitResource": [
+          "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Assets/*",
+          "BaseBusinessKit/THKCardComponentKit/README.md"
+        ]
+      },
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    },
+    {
+      "name": "CollectionViewLayout",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    },
+    {
+      "name": "Protocols",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "CellDataProtocols",
+          "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Protocols/CellDataProtocols/*.h",
+          "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Protocols/CellDataProtocols/*"
+        },
+        {
+          "name": "TMCardComponentCellDataModel",
+          "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Protocols/TMCardComponentCellDataModel/*.h",
+          "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Protocols/TMCardComponentCellDataModel/*"
+        }
+      ]
+    },
+    {
+      "name": "Cells",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "BaseAbstractCardCell",
+          "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/BaseAbstractCardCell/*.h",
+          "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/BaseAbstractCardCell/*"
+        },
+        {
+          "name": "CardComponentCells",
+          "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/*.h",
+          "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/*",
+          "subspecs": [
+            {
+              "name": "TMCardComponentScrollAdsCell",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentScrollAdsCell/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentScrollAdsCell/*",
+              "subspecs": [
+                {
+                  "name": "views",
+                  "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentScrollAdsCell/views/*.h",
+                  "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentScrollAdsCell/views/*"
+                }
+              ]
+            },
+            {
+              "name": "DecorateTags",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/DecorateTags/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/DecorateTags/*"
+            },
+            {
+              "name": "TMCardComponentSearchCell",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentSearchCell/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentSearchCell/*"
+            },
+            {
+              "name": "TMCardComponentSearchCell",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentSearchCell/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentSearchCell/*"
+            },
+            {
+              "name": "TMCardComponentRecommendTagsCell",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentRecommendTagsCell/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/TMCardComponentRecommendTagsCell/*"
+            },
+            {
+              "name": "views",
+              "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/*.h",
+              "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/*",
+              "subspecs": [
+                {
+                  "name": "TMCardLiveStatusView",
+                  "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/TMCardLiveStatusView/*.h",
+                  "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/TMCardLiveStatusView/*"
+                },
+                {
+                  "name": "THKTextTagLabel",
+                  "public_header_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/THKTextTagLabel/*.h",
+                  "source_files": "BaseBusinessKit/THKCardComponentKit/THKCardComponentKit/Classes/Cells/CardComponentCells/views/THKTextTagLabel/*"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    },
+    {
+      "name": "Other",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    },
+    {
+      "name": "PublicHelper",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    },
+    {
+      "name": "BaseListViewController",
+      "public_header_files": "bin_THKCardComponentKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKCardComponentKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKCardComponentKit_0.1.0/*.a"
+    }
+  ]
+}
