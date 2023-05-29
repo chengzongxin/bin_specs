@@ -1,0 +1,29 @@
+{
+  "name": "TBTNetwork",
+  "version": "0.1.9",
+  "summary": "消除警告.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/ios/tbtrepo.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aaron": "aaron.xun@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TBTNetwork/0.1.9/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_TBTNetwork_0.1.9/Headers/*",
+  "public_header_files": "bin_TBTNetwork_0.1.9/Headers/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "4.0.1"
+    ]
+  },
+  "vendored_libraries": "bin_TBTNetwork_0.1.9/*.a"
+}
