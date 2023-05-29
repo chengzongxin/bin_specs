@@ -1,0 +1,24 @@
+{
+  "name": "LSTTimer",
+  "version": "0.2.10",
+  "summary": "一个计时器组件",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n LSTTimer是一个计时器组件, 拥有100ms精确度,支持多任务计时,列表计时,硬盘计时任务等.",
+  "homepage": "https://github.com/LoSenTrad/LSTTimer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "490790096@qq.com": "LoSenTrad@163.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/LSTTimer/0.2.10/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "bin_LSTTimer_0.2.10/Headers/*",
+  "public_header_files": "bin_LSTTimer_0.2.10/Headers/*.h",
+  "vendored_libraries": "bin_LSTTimer_0.2.10/*.a"
+}
