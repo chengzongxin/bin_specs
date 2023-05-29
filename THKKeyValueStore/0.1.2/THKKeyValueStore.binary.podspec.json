@@ -1,0 +1,27 @@
+{
+  "name": "THKKeyValueStore",
+  "version": "0.1.2",
+  "summary": "封装YTKKeyValueStore 指定FMDB依赖版本 A simple Key-Value storage tool, using Sqlite as backend.",
+  "homepage": "https://github.com/yuantiku/YTKKeyValueStore",
+  "license": "MIT",
+  "authors": {
+    "tangqiao": "tangqiao@fenbi.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKKeyValueStore/0.1.2/zip",
+    "type": "zip"
+  },
+  "source_files": "bin_THKKeyValueStore_0.1.2/Headers/*",
+  "requires_arc": true,
+  "public_header_files": "bin_THKKeyValueStore_0.1.2/Headers/*.h",
+  "dependencies": {
+    "FMDB": [
+      "2.7.5"
+    ]
+  },
+  "vendored_libraries": "bin_THKKeyValueStore_0.1.2/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」"
+}
