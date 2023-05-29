@@ -1,0 +1,146 @@
+{
+  "name": "THKRadarKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKRadarKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKRadarKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "libraries": [
+    "z",
+    "stdc++",
+    "c++"
+  ],
+  "dependencies": {
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "THKBusinessToolKit": [
+      "0.1.0"
+    ]
+  },
+  "resources": "bin_THKRadarKit_0.1.0/Resources/*",
+  "source_files": "bin_THKRadarKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKRadarKit_0.1.0/Headers/*.h",
+  "vendored_libraries": "bin_THKRadarKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "TRadarNetwork",
+      "public_header_files": "bin_THKRadarKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKRadarKit_0.1.0/Headers/*",
+      "dependencies": {
+        "TBTNetwork": [
+          "0.1.9"
+        ]
+      },
+      "vendored_libraries": "bin_THKRadarKit_0.1.0/*.a",
+      "resources": "bin_THKRadarKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "TRadarView",
+      "resource_bundles": {
+        "THKRadarKit": [
+          "BaseBusinessKit/THKRadarKit/TRadarView/**/*.xib",
+          "BaseBusinessKit/THKRadarKit/TRadarView/**/*.json"
+        ]
+      },
+      "dependencies": {
+        "THKCustomHUD": [
+          "0.1.5"
+        ],
+        "THKWebDNSKit": [
+          "0.1.0"
+        ],
+        "THKRealTimeDataKit": [
+          "0.1.0"
+        ],
+        "Godeye": [
+          "1.1.3"
+        ],
+        "TMToast": [
+          "1.0.0"
+        ],
+        "TBTLog": [
+          "0.1.8"
+        ],
+        "THKCustomToolKit": [
+          "0.1.0"
+        ],
+        "THKOSSManager": [
+          "2.0.3"
+        ],
+        "TMUICore": [
+          "2.0.25"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ]
+      },
+      "source_files": "bin_THKRadarKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKRadarKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKRadarKit_0.1.0/*.a",
+      "resources": "bin_THKRadarKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "View",
+          "public_header_files": "BaseBusinessKit/THKRadarKit/TRadarView/View/**/*.h",
+          "source_files": "BaseBusinessKit/THKRadarKit/TRadarView/View/**/*"
+        },
+        {
+          "name": "TRadarCommon",
+          "public_header_files": "BaseBusinessKit/THKRadarKit/TRadarView/TRadarCommon/**/*.h",
+          "source_files": "BaseBusinessKit/THKRadarKit/TRadarView/TRadarCommon/**/*"
+        },
+        {
+          "name": "ViewController",
+          "public_header_files": "BaseBusinessKit/THKRadarKit/TRadarView/ViewController/**/*.h",
+          "source_files": "BaseBusinessKit/THKRadarKit/TRadarView/ViewController/**/*"
+        }
+      ]
+    },
+    {
+      "name": "AssistToolView",
+      "public_header_files": "bin_THKRadarKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKRadarKit_0.1.0/Headers/*",
+      "resource_bundles": {
+        "AssistToolView": [
+          "BaseBusinessKit/THKRadarKit/AssistToolView/**/*.png"
+        ]
+      },
+      "dependencies": {
+        "TRouter": [
+          "1.0.0"
+        ],
+        "TMUIExtensions": [
+          "2.0.25"
+        ]
+      },
+      "vendored_libraries": "bin_THKRadarKit_0.1.0/*.a",
+      "resources": "bin_THKRadarKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "MainListView",
+          "public_header_files": "BaseBusinessKit/THKRadarKit/AssistToolView/MainListView/**/*.h",
+          "source_files": "BaseBusinessKit/THKRadarKit/AssistToolView/MainListView/**/*"
+        },
+        {
+          "name": "FloatingButton",
+          "public_header_files": "BaseBusinessKit/THKRadarKit/AssistToolView/FloatingButton/**/*.h",
+          "source_files": "BaseBusinessKit/THKRadarKit/AssistToolView/FloatingButton/**/*"
+        }
+      ]
+    }
+  ]
+}
