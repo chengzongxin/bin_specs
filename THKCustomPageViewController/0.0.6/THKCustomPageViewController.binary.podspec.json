@@ -1,0 +1,28 @@
+{
+  "name": "THKCustomPageViewController",
+  "version": "0.0.6",
+  "summary": "A short description of THKCustomPageViewController.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 自定义的类似UIPageViewController滑动切换相类似的功能的封装控件，但此控件支持横向或纵向滑动切换页面，相关vc事件的触发已尽量与系统级的转场处理的触发逻辑保持一致。",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nigel.ning": "nigel.ning@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKCustomPageViewController/0.0.6/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKCustomPageViewController_0.0.6/Headers/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "public_header_files": "bin_THKCustomPageViewController_0.0.6/Headers/*.h",
+  "vendored_libraries": "bin_THKCustomPageViewController_0.0.6/*.a"
+}
