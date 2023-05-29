@@ -1,0 +1,178 @@
+{
+  "name": "THKInteractiveKit",
+  "version": "0.1.0",
+  "summary": "互动组件-库",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKInteractiveKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <THKInteractiveKit/THKInteractiveKit_BaseDefine.h>",
+  "dependencies": {
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "THKAnimationKit": [
+      "0.1.0"
+    ],
+    "THKShareKit": [
+      "0.1.0"
+    ],
+    "THKRouterKit": [
+      "0.1.0"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "THKModuleService": [
+      "0.1.0"
+    ],
+    "THKGuideAlertKit": [
+      "0.1.0"
+    ],
+    "THKBusinessToolKit": [
+      "0.1.0"
+    ],
+    "THKAttentionKit": [
+      "0.1.0"
+    ],
+    "THKBusinessViewKit/THKIdentityView": [
+      "0.1.0"
+    ],
+    "TRouter": [
+      "1.0.0"
+    ],
+    "TYYKit": [
+      "0.0.4"
+    ],
+    "TUserAvatarView": [
+      "0.0.1"
+    ]
+  },
+  "resources": "bin_THKInteractiveKit_0.1.0/Resources/*",
+  "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "View",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "tools",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/tools/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/tools/*",
+          "subspecs": [
+            {
+              "name": "Resource",
+              "resource_bundles": {
+                "InteractivePraiseAnimation": [
+                  "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/tools/Resource/*.json"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "UI",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/UI/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/UI/*"
+        },
+        {
+          "name": "Manager",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/Manager/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/View/Manager/*"
+        }
+      ]
+    },
+    {
+      "name": "LevelComment",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*",
+      "subspecs": [
+        {
+          "name": "SecondComment",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/SecondComment/**/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/SecondComment/**/*"
+        },
+        {
+          "name": "VC",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/VC/**/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/VC/**/*"
+        },
+        {
+          "name": "View",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/View/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/View/*",
+          "subspecs": [
+            {
+              "name": "Cell",
+              "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/View/Cell/*.h",
+              "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/View/Cell/*"
+            }
+          ]
+        },
+        {
+          "name": "ViewModel",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/ViewModel/**/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/ViewModel/**/*"
+        },
+        {
+          "name": "Extra",
+          "public_header_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/Extra/**/*.h",
+          "source_files": "BaseBusinessKit/THKInteractiveKit/THKInteractiveKit/Classes/LevelComment/Extra/**/*"
+        }
+      ]
+    },
+    {
+      "name": "Model",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Basic",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Other",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*"
+    },
+    {
+      "name": "Network",
+      "public_header_files": "bin_THKInteractiveKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKInteractiveKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKInteractiveKit_0.1.0/*.a",
+      "resources": "bin_THKInteractiveKit_0.1.0/Resources/*"
+    }
+  ]
+}
