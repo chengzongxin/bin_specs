@@ -1,0 +1,105 @@
+{
+  "name": "THKRealTimeDataKit",
+  "version": "0.1.0",
+  "summary": "实时数据库，主要存放用户信息和位置信息(城市id)",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKRealTimeDataKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "static_framework": true,
+  "public_header_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*.h",
+  "source_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*",
+  "dependencies": {
+    "THKMacroKit": [
+      "0.1.0"
+    ],
+    "THKConfigFileManagerKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ]
+  },
+  "vendored_libraries": "bin_THKRealTimeDataKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseKit/THKRealTimeDataKit/Assets/*",
+        "BaseKit/THKRealTimeDataKit/README.md"
+      ],
+      "source_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKRealTimeDataKit_0.1.0/*.a"
+    },
+    {
+      "name": "LocationTool",
+      "public_header_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKLocationManager": [
+          "0.1.0"
+        ]
+      },
+      "vendored_libraries": "bin_THKRealTimeDataKit_0.1.0/*.a"
+    },
+    {
+      "name": "Request",
+      "source_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKRealTimeDataKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "MyDecorateInfo",
+          "public_header_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/*.h",
+          "source_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/*",
+          "subspecs": [
+            {
+              "name": "MyDecorateInfoRequest",
+              "public_header_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/MyDecorateInfoRequest/*.h",
+              "source_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/MyDecorateInfoRequest/*"
+            },
+            {
+              "name": "MyDecorateUpdateRequest",
+              "public_header_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/MyDecorateUpdateRequest/*.h",
+              "source_files": "BaseKit/THKRealTimeDataKit/Request/MyDecorateInfo/MyDecorateUpdateRequest/*"
+            }
+          ]
+        },
+        {
+          "name": "UserInfo",
+          "public_header_files": "BaseKit/THKRealTimeDataKit/Request/UserInfo/*.h",
+          "source_files": "BaseKit/THKRealTimeDataKit/Request/UserInfo/*"
+        },
+        {
+          "name": "GetCurrentItemIdRequest",
+          "public_header_files": "BaseKit/THKRealTimeDataKit/Request/GetCurrentItemIdRequest/*.h",
+          "source_files": "BaseKit/THKRealTimeDataKit/Request/GetCurrentItemIdRequest/*"
+        }
+      ]
+    },
+    {
+      "name": "UserModel",
+      "public_header_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKRealTimeDataKit_0.1.0/Headers/*",
+      "dependencies": {
+        "THKRealTimeDataKit/Request": [
+          "0.1.0"
+        ]
+      },
+      "vendored_libraries": "bin_THKRealTimeDataKit_0.1.0/*.a"
+    }
+  ]
+}
