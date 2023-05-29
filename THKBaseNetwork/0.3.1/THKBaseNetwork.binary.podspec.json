@@ -1,0 +1,61 @@
+{
+  "name": "THKBaseNetwork",
+  "version": "0.3.1",
+  "summary": "1652024:土巴兔App网络请求基类; 83b4cc0:apigwc2域名改成apigw",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 公参中的appName从外部传入的参数中获取，而不是写死\"tbt-app\"",
+  "homepage": "http://repo.we.com/ios/tbtrepo.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aaron": "aaron.xun@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKBaseNetwork/0.3.1/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKBaseNetwork_0.3.1/Headers/*",
+  "dependencies": {
+    "TBTNetwork": [
+      "0.1.9"
+    ],
+    "MJExtension": [
+      "3.2.1"
+    ],
+    "ReactiveObjC": [
+      "3.1.1"
+    ]
+  },
+  "public_header_files": "bin_THKBaseNetwork_0.3.1/Headers/*.h",
+  "vendored_libraries": "bin_THKBaseNetwork_0.3.1/*.a",
+  "subspecs": [
+    {
+      "name": "Request",
+      "source_files": "bin_THKBaseNetwork_0.3.1/Headers/*",
+      "public_header_files": "bin_THKBaseNetwork_0.3.1/Headers/*.h",
+      "vendored_libraries": "bin_THKBaseNetwork_0.3.1/*.a"
+    },
+    {
+      "name": "Manager",
+      "source_files": "bin_THKBaseNetwork_0.3.1/Headers/*",
+      "public_header_files": "bin_THKBaseNetwork_0.3.1/Headers/*.h",
+      "vendored_libraries": "bin_THKBaseNetwork_0.3.1/*.a"
+    },
+    {
+      "name": "Extension",
+      "source_files": "bin_THKBaseNetwork_0.3.1/Headers/*",
+      "public_header_files": "bin_THKBaseNetwork_0.3.1/Headers/*.h",
+      "vendored_libraries": "bin_THKBaseNetwork_0.3.1/*.a"
+    },
+    {
+      "name": "Response",
+      "source_files": "bin_THKBaseNetwork_0.3.1/Headers/*",
+      "public_header_files": "bin_THKBaseNetwork_0.3.1/Headers/*.h",
+      "vendored_libraries": "bin_THKBaseNetwork_0.3.1/*.a"
+    }
+  ]
+}
