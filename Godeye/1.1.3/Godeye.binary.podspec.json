@@ -1,0 +1,38 @@
+{
+  "name": "Godeye",
+  "version": "1.1.3",
+  "summary": "土巴兔天眼",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 修改CollectionView中删除最后一个item时出现的问题",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": "MIT",
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/Godeye/1.1.3/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "bin_Godeye_1.1.3/Headers/*",
+  "dependencies": {
+    "FMDB": [
+      "2.7.5"
+    ],
+    "TUUIDGenerator": [
+      "0.2.0"
+    ],
+    "GTMBase64": [
+      "1.0.1"
+    ]
+  },
+  "prefix_header_contents": [
+    "#define CURRENT_TIMESTAMP (CFAbsoluteTimeGetCurrent()+kCFAbsoluteTimeIntervalSince1970)",
+    "#define GODEYE_VERSION @\"1.1.3\"",
+    "extern void GELog(NSString *frmt, ...);"
+  ],
+  "public_header_files": "bin_Godeye_1.1.3/Headers/*.h",
+  "vendored_libraries": "bin_Godeye_1.1.3/*.a"
+}
