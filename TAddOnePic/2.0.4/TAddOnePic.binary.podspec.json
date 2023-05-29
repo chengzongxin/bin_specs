@@ -1,0 +1,30 @@
+{
+  "name": "TAddOnePic",
+  "version": "2.0.4",
+  "summary": "土巴兔获取单张图片组件",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 合并了2.0.0分支代码，解决冲突",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": "MIT",
+  "authors": {
+    "kevin.huang": "kevin.huang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TAddOnePic/2.0.4/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "bin_TAddOnePic_2.0.4/Headers/*",
+  "dependencies": {
+    "THKCustomHUD": [
+      "0.1.5"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ]
+  },
+  "public_header_files": "bin_TAddOnePic_2.0.4/Headers/*.h",
+  "vendored_libraries": "bin_TAddOnePic_2.0.4/*.a"
+}
