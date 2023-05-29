@@ -1,0 +1,29 @@
+{
+  "name": "THKOSSManager",
+  "version": "2.0.3",
+  "summary": "OSS上传/下载.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 修改上传下载方案：文件名由接口定义并返回；接口增加了字段用于身份认证;接口请求增加了公参；",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": "MIT",
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKOSSManager/2.0.3/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKOSSManager_2.0.3/Headers/*",
+  "public_header_files": "bin_THKOSSManager_2.0.3/Headers/*.h",
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ],
+    "AFNetworking": [
+      "4.0.1"
+    ]
+  },
+  "vendored_libraries": "bin_THKOSSManager_2.0.3/*.a"
+}
