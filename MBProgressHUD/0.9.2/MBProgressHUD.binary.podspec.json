@@ -1,0 +1,26 @@
+{
+  "name": "MBProgressHUD",
+  "version": "0.9.2",
+  "summary": "An iOS activity indicator view.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n          MBProgressHUD is an iOS drop-in class that displays a translucent HUD \nwith an indicator and/or labels while work is being done in a background thread. \nThe HUD is meant as a replacement for the undocumented, private UIKit UIProgressHUD \nwith some additional features.",
+  "homepage": "http://www.bukovinski.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Matej Bukovinski": "matej@bukovinski.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/MBProgressHUD/0.9.2/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "bin_MBProgressHUD_0.9.2/Headers/*",
+  "frameworks": "CoreGraphics",
+  "requires_arc": true,
+  "public_header_files": "bin_MBProgressHUD_0.9.2/Headers/*.h",
+  "vendored_libraries": "bin_MBProgressHUD_0.9.2/*.a"
+}
