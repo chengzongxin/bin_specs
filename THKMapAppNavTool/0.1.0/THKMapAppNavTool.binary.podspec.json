@@ -1,0 +1,38 @@
+{
+  "name": "THKMapAppNavTool",
+  "version": "0.1.0",
+  "summary": "地图导航工具类",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/collen.zhang/THKMapAppNavTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "collen.zhang": "collen.zhang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKMapAppNavTool/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "public_header_files": "bin_THKMapAppNavTool_0.1.0/Headers/*.h",
+  "source_files": "bin_THKMapAppNavTool_0.1.0/Headers/*",
+  "dependencies": {
+    "Godeye": [
+      "1.1.3"
+    ],
+    "BaiduMapKit": [
+      "6.3.0"
+    ],
+    "TMToast": [
+      "1.0.0"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ]
+  },
+  "vendored_libraries": "bin_THKMapAppNavTool_0.1.0/*.a"
+}
