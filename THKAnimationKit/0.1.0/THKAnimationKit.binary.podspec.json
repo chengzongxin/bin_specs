@@ -1,0 +1,99 @@
+{
+  "name": "THKAnimationKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKAnimationKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKAnimationKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+  "prefix_header_contents": "#import <Masonry/Masonry.h>\n#import <THKAnimationKit/THKAnimationKit_BaseDefine.h>",
+  "dependencies": {
+    "TMUIComponents": [
+      "2.0.25"
+    ],
+    "THKBaseKit": [
+      "0.1.0"
+    ],
+    "THKMacroKit": [
+      "0.1.0"
+    ],
+    "TMUIExtensions": [
+      "2.0.25"
+    ]
+  },
+  "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseKit/THKAnimationKit/README.md"
+      ],
+      "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a"
+    },
+    {
+      "name": "Animation",
+      "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "MoveCard",
+          "public_header_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/MoveCard/*.h",
+          "source_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/MoveCard/*"
+        },
+        {
+          "name": "ImgViewUp",
+          "public_header_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/ImgViewUp/*.h",
+          "source_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/ImgViewUp/*"
+        },
+        {
+          "name": "Search"
+        },
+        {
+          "name": "MoveView",
+          "public_header_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/MoveView/*.h",
+          "source_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/MoveView/*"
+        },
+        {
+          "name": "Half",
+          "public_header_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/Half/*.h",
+          "source_files": "BaseKit/THKAnimationKit/THKAnimationKit/Classes/Animation/Half/*"
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a"
+    },
+    {
+      "name": "Drag",
+      "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a"
+    },
+    {
+      "name": "PushPopAsLocationToListTransition",
+      "public_header_files": "bin_THKAnimationKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKAnimationKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKAnimationKit_0.1.0/*.a"
+    }
+  ]
+}
