@@ -1,0 +1,103 @@
+{
+  "name": "THKAttentionKit",
+  "version": "0.1.0",
+  "summary": "关注",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ben.gan": "ben.gan@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKAttentionKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKAttentionKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKAttentionKit_0.1.0/Headers/*.h",
+  "dependencies": {
+    "THKBaseKit": [
+      "0.1.0"
+    ],
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "THKGuideAlertKit/THKCommentGuideView": [
+      "0.1.0"
+    ],
+    "THKModuleService": [
+      "0.1.0"
+    ],
+    "THKRealTimeDataKit": [
+      "0.1.0"
+    ]
+  },
+  "vendored_libraries": "bin_THKAttentionKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Network",
+      "source_files": "bin_THKAttentionKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKAttentionKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKAttentionKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "MyPageAttention",
+          "subspecs": [
+            {
+              "name": "MyPageAttentionRequest",
+              "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/MyPageAttention/MyPageAttentionRequest/*.h",
+              "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/MyPageAttention/MyPageAttentionRequest/*"
+            },
+            {
+              "name": "AttentionTopic",
+              "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/MyPageAttention/AttentionTopic/*.h",
+              "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/MyPageAttention/AttentionTopic/*"
+            }
+          ]
+        },
+        {
+          "name": "AttentionModule",
+          "subspecs": [
+            {
+              "name": "AttentionNum",
+              "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/AttentionNum/*.h",
+              "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/AttentionNum/*"
+            },
+            {
+              "name": "AddFollow",
+              "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/AddFollow/*.h",
+              "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/AddFollow/*"
+            },
+            {
+              "name": "FollowStatus",
+              "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/FollowStatus/*.h",
+              "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/AttentionModule/FollowStatus/*"
+            }
+          ]
+        },
+        {
+          "name": "CommunityFollowAndEdit",
+          "public_header_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/CommunityFollowAndEdit/*.h",
+          "source_files": "BaseBusinessKit/THKAttentionKit/THKAttentionKit/Classes/Network/CommunityFollowAndEdit/*"
+        }
+      ]
+    },
+    {
+      "name": "THKFocusButtonView",
+      "public_header_files": "bin_THKAttentionKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKAttentionKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKAttentionKit_0.1.0/*.a"
+    },
+    {
+      "name": "Model",
+      "public_header_files": "bin_THKAttentionKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKAttentionKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKAttentionKit_0.1.0/*.a"
+    }
+  ]
+}
