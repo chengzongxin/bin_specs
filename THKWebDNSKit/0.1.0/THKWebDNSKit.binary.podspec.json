@@ -1,0 +1,134 @@
+{
+  "name": "THKWebDNSKit",
+  "version": "0.1.0",
+  "summary": "A short description of THKWebDNSKit.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "collen.zhang": "collen.zhang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKWebDNSKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "bin_THKWebDNSKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKWebDNSKit_0.1.0/Headers/*.h",
+  "dependencies": {
+    "THKNetworkKit": [
+      "0.1.0"
+    ],
+    "KKJSBridge/AjaxProtocolHook": [
+      "1.3.9"
+    ],
+    "SSZipArchive": [
+      "2.2.3"
+    ],
+    "THKSafeKit": [
+      "0.1.0"
+    ],
+    "THKCustomToolKit": [
+      "0.1.0"
+    ],
+    "TYYKit": [
+      "0.0.4"
+    ],
+    "THKConfigurationKit": [
+      "0.1.0"
+    ],
+    "THKCustomViewKit": [
+      "0.1.0"
+    ],
+    "THKBusinessToolKit": [
+      "0.1.0"
+    ]
+  },
+  "prefix_header_contents": "#import <THKWebDNSKit/THKWebDNS_BaseDefine.h>",
+  "vendored_libraries": "bin_THKWebDNSKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseBusinessKit/THKWebDNSKit/README.md",
+        "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Assets/Py/*.py",
+        "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Assets/Js/*.js"
+      ],
+      "source_files": "bin_THKWebDNSKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKWebDNSKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKWebDNSKit_0.1.0/*.a"
+    },
+    {
+      "name": "KKCategory",
+      "public_header_files": "bin_THKWebDNSKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKWebDNSKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKWebDNSKit_0.1.0/*.a"
+    },
+    {
+      "name": "CCCandyWebCache",
+      "public_header_files": "bin_THKWebDNSKit_0.1.0/Headers/*.h",
+      "source_files": "bin_THKWebDNSKit_0.1.0/Headers/*",
+      "vendored_libraries": "bin_THKWebDNSKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "VersionChecker",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/VersionChecker/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/VersionChecker/*"
+        },
+        {
+          "name": "WebViewProtocol",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/WebViewProtocol/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/WebViewProtocol/*"
+        },
+        {
+          "name": "CacheManager",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/CacheManager/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/CacheManager/*"
+        },
+        {
+          "name": "Utils",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/Utils/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/Utils/*"
+        },
+        {
+          "name": "HTFileDownloader",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/HTFileDownloader/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/HTFileDownloader/*"
+        },
+        {
+          "name": "bsdiff",
+          "subspecs": [
+            {
+              "name": "bsdiff",
+              "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/bsdiff/bsdiff/*.h",
+              "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/bsdiff/bsdiff/*"
+            },
+            {
+              "name": "bzip2",
+              "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/bsdiff/bzip2/*.h",
+              "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/CCCandyWebCache/bsdiff/bzip2/*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "source_files": "bin_THKWebDNSKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKWebDNSKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKWebDNSKit_0.1.0/*.a",
+      "subspecs": [
+        {
+          "name": "GetOfflinePackage",
+          "public_header_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/Network/GetOfflinePackage/*.h",
+          "source_files": "BaseBusinessKit/THKWebDNSKit/THKWebDNSKit/Classes/Network/GetOfflinePackage/*"
+        }
+      ]
+    }
+  ]
+}
