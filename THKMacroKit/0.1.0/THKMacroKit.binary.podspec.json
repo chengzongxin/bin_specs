@@ -1,0 +1,40 @@
+{
+  "name": "THKMacroKit",
+  "version": "0.1.0",
+  "summary": "宏定义库",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n TODO: Add long description of the pod here.",
+  "homepage": "http://repo.we.com/iosfeaturelibraries/THKBusinessComponent.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amby.qin": "amby.qin@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/THKMacroKit/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit",
+    "CoreGraphics"
+  ],
+  "source_files": "bin_THKMacroKit_0.1.0/Headers/*",
+  "public_header_files": "bin_THKMacroKit_0.1.0/Headers/*.h",
+  "vendored_libraries": "bin_THKMacroKit_0.1.0/*.a",
+  "subspecs": [
+    {
+      "name": "Resources",
+      "resources": [
+        "BaseKit/THKMacroKit/README.md"
+      ],
+      "source_files": "bin_THKMacroKit_0.1.0/Headers/*",
+      "public_header_files": "bin_THKMacroKit_0.1.0/Headers/*.h",
+      "vendored_libraries": "bin_THKMacroKit_0.1.0/*.a"
+    }
+  ]
+}
