@@ -1,0 +1,23 @@
+{
+  "name": "TMJRefresh",
+  "version": "3.4.2",
+  "summary": "基于MJRefresh 3.4.1版本基础上稍微修改部分源码后的库,解决工程内部原旧库的冲突",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n 由MJRefresh 3.4.1 版本修改而来",
+  "homepage": "http://repo.we.com/ios/tbtrepo",
+  "license": "MIT",
+  "authors": {
+    "jerry.jiang": "jerry.jiang@corp.to8to.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TMJRefresh/3.4.2/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.2"
+  },
+  "requires_arc": true,
+  "source_files": "bin_TMJRefresh_3.4.2/Headers/*",
+  "resources": "bin_TMJRefresh_3.4.2/Resources/*",
+  "public_header_files": "bin_TMJRefresh_3.4.2/Headers/*.h",
+  "vendored_libraries": "bin_TMJRefresh_3.4.2/*.a"
+}
